@@ -8,7 +8,7 @@ Since it was developed for small screens there are no responsive features. That 
 
 ## Example
 
-Check out the [live demo]() or take a look at the [example folder]().
+Check out the [live demo](http://codepen.io/anon/pen/aBtyr) or take a look at the [example folder](https://github.com/zeMirco/flexbox-grid/tree/master/example).
 
 ## How to use
 
