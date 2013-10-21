@@ -1,0 +1,30 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: source-sans-pro, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  padding: 0 20px;
+}
+
+div[class^="col-"] {
+  border: 1px solid #a9a9a9;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: #dfe2e2;
+}
+
+div[class^="col-auto"] {
+  background: lightblue;
+}
+
+.small {
+  font-size: 11px;
+}

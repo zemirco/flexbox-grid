@@ -1,0 +1,33 @@
+// import nib for cross browser features
+@import 'nib'
+
+// space between columns
+var-gutter-width = 10px
+
+// the row
+.row
+  box-sizing(border-box)
+  display flex
+  margin-left - var-gutter-width
+  margin-right - var-gutter-width
+
+// generates col-1, col-2, ..., col-12
+for num in (1..12)
+  .col-{num}
+    flex-basis (100/12)%*num
+    box-sizing(border-box)
+
+// generates col-offset-1, col-offset-2, ..., col-offset-11
+for num in (1..11)
+  .col-offset-{num}
+    margin-left (100/12)%*num
+
+// use flex for auto width columns
+.col-auto
+  box-sizing(border-box)
+  flex 1
+
+// add some padding to columns
+div[class^="col-"]
+  padding-left var-gutter-width
+  padding-right var-gutter-width
