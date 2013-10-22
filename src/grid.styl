@@ -1,0 +1,33 @@
+// space between columns
+var-columns = 12
+var-gutter-width = 1rem
+
+// the row
+.topcoat-grid__row
+  box-sizing(border-box)
+  display flex
+  margin-left - var-gutter-width
+  margin-right - var-gutter-width
+
+// generates .topcoat-grid__column--1, .topcoat-grid__column--2, ..., .topcoat-grid__column--12
+for num in (1..var-columns)
+  .topcoat-grid__column--{num}
+    flex-basis (100/var-columns)%*num
+    box-sizing(border-box)
+    padding-left var-gutter-width
+    padding-right var-gutter-width
+
+// generates .topcoat-grid__column-offset--1, .topcoat-grid__column-offset--2, ..., .topcoat-grid__column-offset--12
+for num in (1..var-columns - 1)
+  .topcoat-grid__column-offset--{num}
+    margin-left (100/var-columns)%*num
+    padding-left var-gutter-width
+    padding-right var-gutter-width
+
+// use flex for auto width columns
+.topcoat-grid__column--auto
+  box-sizing(border-box)
+  flex 1
+  padding-left var-gutter-width
+  padding-right var-gutter-width
+

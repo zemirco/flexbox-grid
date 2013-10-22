@@ -1,28 +1,50 @@
-
 module.exports = function(grunt) {
-  grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
-    stylus: {
-      dev: {
-        options: {
-          compress: false
+    grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
+        stylus: {
+            compile: {
+                options: {
+                    compress: false
+                },
+                files: {
+                    'css/grid.css': 'src/grid.styl'
+                }
+            }
         },
-        files: {
-          'flexbox-grid.css': 'flexbox-grid.styl'
-        }
-      },
-      prod: {
-        options: {
-          compress: true
+
+        autoprefixer: {
+            dist: {
+                options: {
+                    /*
+                     * Add target browsers here
+                     * https://github.com/ai/autoprefixer#browsers
+                     * browsers: ['android 4']
+                     */
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'css',
+                    src: ['*.css', '!*.min.css'],
+                    dest: 'css/'
+                }]
+            }
+
         },
-        files: {
-          'flexbox-grid.min.css': 'flexbox-grid.styl'
-        }
-      }
-    }
-  });
 
-  grunt.loadNpmTasks('grunt-contrib-stylus');
+        cssmin: {
+            minify: {
+                expand: true,
+                cwd: 'css',
+                src: ['*.css', '!*.min.css'],
+                dest: 'css',
+                ext: '.min.css'
+            }
+        },
+    });
 
-  grunt.registerTask('default', ['stylus']);
+    grunt.loadNpmTasks('grunt-contrib-stylus');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-autoprefixer');
+
+    grunt.registerTask('default', ['stylus', 'autoprefixer', 'cssmin']);
 };
