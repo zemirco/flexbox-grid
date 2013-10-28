@@ -10,10 +10,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-main {
-  padding: 0 20px;
-}
-
 div[class^="col-"] {
   border: 1px solid #a9a9a9;
   padding-top: 5px;
