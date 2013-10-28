@@ -1,6 +1,6 @@
 {
   "name": "flexbox-grid",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "simple grid built on css flex",
   "main": "Gruntfile.js",
   "directories": {
