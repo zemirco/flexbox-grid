@@ -1,33 +1,69 @@
 // import nib for cross browser features
 @import 'nib'
 
-// space between columns
-var-gutter-width = 10px
+// variables
+var-columns = 12
+var-gutter-width = 1rem
+
+// some styles that apply to all columns - makes final css nicer
+// http://learnboost.github.io/stylus/docs/extend.html -> Extending placeholder selectors
+$common-column-styles
+  box-sizing(border-box)
+  padding-left var-gutter-width
+  padding-right var-gutter-width
+
+// wrapper around our rows
+.container
+  @extend $common-column-styles
 
 // the row
 .row
   box-sizing(border-box)
   display flex
+  flex-wrap wrap
   margin-left - var-gutter-width
   margin-right - var-gutter-width
 
-// generates col-1, col-2, ..., col-12
-for num in (1..12)
-  .col-{num}
-    flex-basis (100/12)%*num
-    box-sizing(border-box)
+// generates col-xs-1, col-xs-2, ..., col-xs-12
+grid(klass)
+  for num in (1..var-columns)
+    .col-{klass}-{num}
+      @extend $common-column-styles
+      // !important is needed to override .row > div
+      flex-basis (100/var-columns)%*num !important
 
-// generates col-offset-1, col-offset-2, ..., col-offset-11
-for num in (1..11)
-  .col-offset-{num}
-    margin-left (100/12)%*num
+// generates col-xs-offset-1, col-xs-offset-2, ..., col-xs-offset-11
+offset(klass)
+  for num in (1..var-columns - 1)
+    .col-{klass}-offset-{num}
+      margin-left (100/var-columns)%*num
 
 // use flex for auto width columns
 .col-auto
-  box-sizing(border-box)
-  flex 1
+  @extend $common-column-styles
+  // !important is needed to override .row > div
+  flex 1 1 0 !important
 
-// add some padding to columns
-div[class^="col-"]
-  padding-left var-gutter-width
-  padding-right var-gutter-width
+// set default style to full width
+// so we don't have to use col-xs-12 every time we want a column to be full width on xs screen
+.row > div
+  flex-basis 100%
+
+// generate default / mobile first xs grid
+grid('xs')
+offset('xs')
+
+// tablet styles
+@media (min-width: 768px)
+  grid('sm')
+  offset('sm')
+
+// desktop styles
+@media (min-width: 992px)
+  grid('md')
+  offset('md')
+
+// large styles
+@media (min-width: 1200px)
+  grid('lg')
+  offset('lg')
