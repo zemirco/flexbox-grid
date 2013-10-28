@@ -4,7 +4,6 @@ Grid system built on top of [flex](https://developer.mozilla.org/en-US/docs/Web/
 Heavily influenced by [Bootstrap](http://getbootstrap.com/css/#grid).
 
 Perfect partner for [Topcoat](http://topcoat.io/) but it can be used with or without any framework you want.
-Since it was developed for small screens there are no responsive features. That might change in the future though.
 
 ## Example
 
@@ -16,20 +15,20 @@ Flexbox grid uses classes like Bootstrap so you don't have to learn anything new
 
 ```html
 <div class="row">
-  <div class="col-1">
-    col-1
+  <div class="col-xs-1">
+    col-xs-1
   </div>
 </div>
 
 <div class="row">
-  <div class="col-6">
-    col-6
+  <div class="col-xs-6">
+    col-xs-6
   </div>
 </div>
 
 <div class="row">
-  <div class="col-2 col-offset-6">
-    col-2 col-offset-6
+  <div class="col-xs-2 col-xs-offset-6">
+    col-xs-2 col-xs-offset-6
   </div>
 </div>
 ```
@@ -60,6 +59,18 @@ There are also classes that fill the available space automatically.
 ## Development
 
 Make your changes in `flexbox-grid.styl` and run `grunt` to compile `flexbox-grid.css` and `flexbox-grid.min.css`
+
+## Changelog
+
+##### v1.0.0 - 28/10/2013
+
+ - renamend `col-*` classes to responsive `xs`, `sm`, `md`, `lg` classes
+ - made final CSS more readable by [extending placeholder selectors](http://learnboost.github.io/stylus/docs/extend.html)
+ - added `.container` class as wrapper for `.row` - fixes horizontal overflow
+
+##### v0.0.1 - 21/10/2013
+
+ - initial release
 
 ## License
 
