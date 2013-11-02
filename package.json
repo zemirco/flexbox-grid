@@ -1,5 +1,5 @@
 {
-  "name": "flexbox-grid",
+  "name": "topcoat-grid",
   "version": "0.0.1",
   "description": "simple grid built on css flex",
   "main": "Gruntfile.js",
