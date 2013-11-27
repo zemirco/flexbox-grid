@@ -1,6 +1,6 @@
 {
-  "name": "flexbox-grid",
-  "version": "0.0.1",
+  "name": "topcoat-grid",
+  "version": "0.0.2",
   "description": "simple grid built on css flex",
   "main": "Gruntfile.js",
   "directories": {
@@ -20,7 +20,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zeMirco/flexbox-grid"
+    "url": "https://github.com/topcoat/topcoat-grid"
   },
   "dependencies": {
     "grunt": "~0.4.1",

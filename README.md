@@ -13,7 +13,7 @@ Grid system built on top of [flex](https://developer.mozilla.org/en-US/docs/Web/
 
 <div class="topcoat-grid__row">
   <div class="topcoat-grid__column--6">
-    2 Columns
+    6 Columns
   </div>
 </div>
 
