@@ -5,38 +5,42 @@ Grid system built on top of [flex](https://developer.mozilla.org/en-US/docs/Web/
 ## How to use
 
 ```html
-<div class="topcoat-grid__row">
-  <div class="topcoat-grid__column--1">
-    1 Column
-  </div>
-</div>
+<div class="topcoat-grid">
+    <div class="topcoat-grid__row">
+    <div class="topcoat-grid__column--1">
+        1 Column
+    </div>
+    </div>
 
-<div class="topcoat-grid__row">
-  <div class="topcoat-grid__column--6">
-    6 Columns
-  </div>
-</div>
+    <div class="topcoat-grid__row">
+    <div class="topcoat-grid__column--6">
+        6 Columns
+    </div>
+    </div>
 
-<div class="topcoat-grid__row">
-  <div class="topcoat-grid__column--2 topcaot-grid__column-offset--6">
-    2 Columns Offset 6
-  </div>
+    <div class="topcoat-grid__row">
+    <div class="topcoat-grid__column--2 topcaot-grid__offset--6">
+        2 Columns Offset 6
+    </div>
+    </div>
 </div>
 ```
 
 There are also classes that fill the available space automatically.
 
 ```html
-<div class="topcoat-grid__row">
-  <div class="topcoat-grid__column--auto">
-    Auto Column
-  </div>
-  <div class="topcoat-grid__column--auto">
-    Auto Column
-  </div>
-  <div class="topcoat-grid__column--auto">
-    Auto Column
-  </div>
+<div class="topcoat-grid">
+    <div class="topcoat-grid__row">
+    <div class="topcoat-grid__column--auto">
+        Auto Column
+    </div>
+    <div class="topcoat-grid__column--auto">
+        Auto Column
+    </div>
+    <div class="topcoat-grid__column--auto">
+        Auto Column
+    </div>
+    </div>
 </div>
 ```
 
