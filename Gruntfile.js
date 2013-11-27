@@ -12,25 +12,6 @@ module.exports = function(grunt) {
             }
         },
 
-        autoprefixer: {
-            dist: {
-                options: {
-                    /*
-                     * Add target browsers here
-                     * https://github.com/ai/autoprefixer#browsers
-                     * browsers: ['android 4']
-                     */
-                },
-                files: [{
-                    expand: true,
-                    cwd: 'css',
-                    src: ['*.css', '!*.min.css'],
-                    dest: 'css/'
-                }]
-            }
-
-        },
-
         cssmin: {
             minify: {
                 expand: true,
@@ -44,7 +25,6 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-stylus');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-autoprefixer');
 
-    grunt.registerTask('default', ['stylus', 'autoprefixer', 'cssmin']);
+    grunt.registerTask('default', ['stylus', 'cssmin']);
 };

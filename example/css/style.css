@@ -11,10 +11,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-main {
-  padding: 0 20px;
+.topcoat-grid {
+    padding: 0 40px;
 }
 
+.topcoat-grid__column--auto,
 .topcoat-grid__column--1,
 .topcoat-grid__column--2,
 .topcoat-grid__column--3,
@@ -28,9 +29,10 @@ main {
 .topcoat-grid__column--11,
 .topcoat-grid__column--12 {
   border: 1px solid #a9a9a9;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background: #dfe2e2;
+  overflow: hidden;
 }
 
 .topcoat-grid__column--auto {
