@@ -1,0 +1,108 @@
+.topcoat-grid,
+.topcoat-grid__column--1,
+.topcoat-grid__column--2,
+.topcoat-grid__column--3,
+.topcoat-grid__column--4,
+.topcoat-grid__column--5,
+.topcoat-grid__column--6,
+.topcoat-grid__column--7,
+.topcoat-grid__column--8,
+.topcoat-grid__column--9,
+.topcoat-grid__column--10,
+.topcoat-grid__column--11,
+.topcoat-grid__column--12,
+.topcoat-grid__offset--1,
+.topcoat-grid__offset--2,
+.topcoat-grid__offset--3,
+.topcoat-grid__offset--4,
+.topcoat-grid__offset--5,
+.topcoat-grid__offset--6,
+.topcoat-grid__offset--7,
+.topcoat-grid__offset--8,
+.topcoat-grid__offset--9,
+.topcoat-grid__offset--10,
+.topcoat-grid__offset--11,
+.topcoat-grid__column--auto {
+  box-sizing: border-box;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.topcoat-grid__row {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+.topcoat-grid__column--1 {
+  flex-basis: 8.333333333333334%;
+}
+.topcoat-grid__column--2 {
+  flex-basis: 16.666666666666668%;
+}
+.topcoat-grid__column--3 {
+  flex-basis: 25%;
+}
+.topcoat-grid__column--4 {
+  flex-basis: 33.333333333333336%;
+}
+.topcoat-grid__column--5 {
+  flex-basis: 41.66666666666667%;
+}
+.topcoat-grid__column--6 {
+  flex-basis: 50%;
+}
+.topcoat-grid__column--7 {
+  flex-basis: 58.333333333333336%;
+}
+.topcoat-grid__column--8 {
+  flex-basis: 66.66666666666667%;
+}
+.topcoat-grid__column--9 {
+  flex-basis: 75%;
+}
+.topcoat-grid__column--10 {
+  flex-basis: 83.33333333333334%;
+}
+.topcoat-grid__column--11 {
+  flex-basis: 91.66666666666667%;
+}
+.topcoat-grid__column--12 {
+  flex-basis: 100%;
+}
+.topcoat-grid__offset--1 {
+  margin-left: 8.333333333333334%;
+}
+.topcoat-grid__offset--2 {
+  margin-left: 16.666666666666668%;
+}
+.topcoat-grid__offset--3 {
+  margin-left: 25%;
+}
+.topcoat-grid__offset--4 {
+  margin-left: 33.333333333333336%;
+}
+.topcoat-grid__offset--5 {
+  margin-left: 41.66666666666667%;
+}
+.topcoat-grid__offset--6 {
+  margin-left: 50%;
+}
+.topcoat-grid__offset--7 {
+  margin-left: 58.333333333333336%;
+}
+.topcoat-grid__offset--8 {
+  margin-left: 66.66666666666667%;
+}
+.topcoat-grid__offset--9 {
+  margin-left: 75%;
+}
+.topcoat-grid__offset--10 {
+  margin-left: 83.33333333333334%;
+}
+.topcoat-grid__offset--11 {
+  margin-left: 91.66666666666667%;
+}
+.topcoat-grid__column--auto {
+  flex: 1 1 0;
+}

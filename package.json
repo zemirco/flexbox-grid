@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "description": "simple grid built on css flex",
   "main": "Gruntfile.js",
+  "style": "src/grid.css",
   "directories": {
     "example": "example"
   },
@@ -13,18 +14,16 @@
     "system"
   ],
   "author": {
-    "name": "Mirco Zeiss",
-    "email": "mirco.zeiss@gmail.com",
-    "twitter": "zeMirco"
+    "name": "Kristofer Joseph",
+    "twitter": "dam"
   },
-  "license": "MIT",
+  "license": "MIT, Apache2",
   "repository": {
     "type": "git",
     "url": "https://github.com/topcoat/topcoat-grid"
   },
   "dependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-stylus": "~0.9.0"
+    "grunt": "~0.4.1"
   },
   "devDependencies": {
     "grunt-contrib-cssmin": "~0.6.2"
